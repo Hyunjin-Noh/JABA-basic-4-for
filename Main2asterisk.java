@@ -1,17 +1,35 @@
+/*p.164 ì‹¤ìŠµë¬¸ì œ3
+ì˜ˆì‹œ ìž…ë ¥ 1 
+ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>5
+ì˜ˆì‹œ ì¶œë ¥ 1
+*****
+****
+***
+**
+*
+ì˜ˆì‹œ ìž…ë ¥ 2 
+ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>0
+ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤. ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>-1
+ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤. ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>2
+ì˜ˆì‹œ ì¶œë ¥ 2
+**
+*
+
+*/
 import java.util.Scanner;
 public class Main2asterisk {
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
-		System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
+		System.out.print("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>");
 		do {
 			int num = s.nextInt();
 			if (num<=0) {
-				System.out.print("Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù. Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À>>");
+				System.out.print("ìž˜ëª» ìž…ë ¥í–ˆìŠµë‹ˆë‹¤. ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤>>");
 				continue;}
 			for(int i=num;i>0;i--) {
 				for(int j=0;j<i;j++) System.out.print('*'); 
 		    System.out.println();}
-		    break;//break¹® ¾È ¾²¸é ¹«ÇÑ·çÇÁ¸¦ ºüÁ®³ª¿Ã ¼ö ¾ø¾î while¹® µÚ ÄÚµå°¡ ¾Æ¹« ÀÇ¹Ì ¾ø¾îÁü.
+		    break;//breakë¬¸ ì•ˆ ì“°ë©´ ë¬´í•œë£¨í”„ë¥¼ ë¹ ì ¸ë‚˜ì˜¬ ìˆ˜ ì—†ì–´ whileë¬¸ ë’¤ ì½”ë“œê°€ ì•„ë¬´ ì˜ë¯¸ ì—†ì–´ì§.
 		} while(true);
 		s.close();
 	}
